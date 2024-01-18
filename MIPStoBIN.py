@@ -7,11 +7,11 @@ with open("./instLib.json", encoding="utf-8-sig") as j:
     MEMORY_INST = ["lb", "lh", "lw", "lbu", "lhu", "sb", "sh", "sw"]
 
     # FOLLOWING IS NOT USED ANYMORE
-    SHIFT_INST = {"shamt":["sll", "srl", "sra"], "v":["sllv", "srlv", "srav"]}
-    BRANCH_INST = ["beq", "bne", "blez", "bgtz"]
-    RT_RSO_INST = ["jr", "mthi", "mtlo"]
-    RT_RDO_INST = ["mfhi", "mflo"]
-    HILO_INST = ["mult", "multu", "div", "divu"]
+    # SHIFT_INST = {"shamt":["sll", "srl", "sra"], "v":["sllv", "srlv", "srav"]}
+    # BRANCH_INST = ["beq", "bne", "blez", "bgtz"]
+    # RT_RSO_INST = ["jr", "mthi", "mtlo"]
+    # RT_RDO_INST = ["mfhi", "mflo"]
+    # HILO_INST = ["mult", "multu", "div", "divu"]
 
 with open("./regLoc.json", encoding="utf-8-sig") as j:
     REGISTERS = json.load(j)
@@ -107,7 +107,6 @@ for i in l:
             #         baseI["i"] = format((pdi) if pdi >= 0 else (pdi & 0b1111111111111111), f'0{IDATA["size"]["i"]}b')
             # else:
             #     baseI["rt"] = format(REGISTERS[paramData[0]], f'0{IDATA["size"]["rt"]}b')
-                
             #     if inst in MEMORY_INST:
             #         d = paramData[1].split("(")
             #         pdi = int(d[0])
