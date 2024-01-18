@@ -1,0 +1,317 @@
+﻿{
+  "add": {
+    "Meaning": "Add",
+    "Type": "R",
+    "Opcode": "0x00",
+    "Funct": "0x20",
+    "Format": ["rd", "rs", "rt"]
+  },  
+  "addi": {
+    "Meaning": "Add Immediate",
+    "Type": "I",
+    "Opcode": "0x08",
+    "Funct": "NA",
+    "Format": ["rt", "rs", "i"]
+  },
+  "addiu": {
+    "Meaning": "Add Unsigned Immediate",
+    "Type": "I",
+    "Opcode": "0x09",
+    "Funct": "NA",
+    "Format": ["rt", "rs", "i"]
+  },
+  "addu": {
+    "Meaning": "Add Unsigned",
+    "Type": "R",
+    "Opcode": "0x00",
+    "Funct": "0x21",
+    "Format": ["rd", "rs", "rt"]
+  },
+  "and": {
+    "Meaning": "Bitwise AND",
+    "Type": "R",
+    "Opcode": "0x00",
+    "Funct": "0x24",
+    "Format": ["rd", "rs", "rt"]
+  },
+  "andi": {
+    "Meaning": "Bitwise AND Immediate",
+    "Type": "I",
+    "Opcode": "0x0C",
+    "Funct": "NA",
+    "Format": ["rt", "rs", "i"]
+  },
+  "beq": {
+    "Meaning": "Branch if Equal",
+    "Type": "I",
+    "Opcode": "0x04",
+    "Funct": "NA",
+    "Format": ["rs", "rt", "i"]
+  },
+  "blez": {
+    "Meaning": "Branch if Less Than or Equal to Zero",
+    "Type": "I",
+    "Opcode": "0x06",
+    "Funct": "NA",
+    "Format": ["rs", "i"]
+  },
+  "bne": {
+    "Meaning": "Branch if Not Equal",
+    "Type": "I",
+    "Opcode": "0x05",
+    "Funct": "NA",
+    "Format": ["rs", "rt", "i"]
+  },
+  "bgtz": {
+    "Meaning": "Branch on Greater Than Zero",
+    "Type": "I",
+    "Opcode": "0x07",
+    "Funct": "NA",
+    "Format": ["rs", "i"]
+  },
+  "div": {
+    "Meaning": "Divide",
+    "Type": "R",
+    "Opcode": "0x00",
+    "Funct": "0x1A",
+    "Format": ["rs", "rt"]
+  },
+  "divu": {
+    "Meaning": "Unsigned Divide",
+    "Type": "R",
+    "Opcode": "0x00",
+    "Funct": "0x1B",
+    "Format": ["rs", "rt"]
+  },
+  "j": {
+    "Meaning": "Jump to Address",
+    "Type": "J",
+    "Opcode": "0x02",
+    "Funct": "NA",
+    "Format": ["ad"]
+  },
+  "jal": {
+    "Meaning": "Jump and Link",
+    "Type": "J",
+    "Opcode": "0x03",
+    "Funct": "NA",
+    "Format": ["ad"]
+  },
+  "jalr": {
+    "Meaning": "Jump and Link Register",
+    "Type": "R",
+    "Opcode": "0x00",
+    "Funct": "0x09",
+    "Format": ["rd", "rs"]
+  },
+  "jr": {
+    "Meaning": "Jump to Address in Register",
+    "Type": "R",
+    "Opcode": "0x00",
+    "Funct": "0x08",
+    "Format": ["rs"]
+  },
+  "lb": {
+    "Meaning": "Load Byte",
+    "Type": "I",
+    "Opcode": "0x20",
+    "Funct": "NA",
+    "Format": ["rt", "i", "rs"]
+  },
+  "lbu": {
+    "Meaning": "Load Byte Unsigned",
+    "Type": "I",
+    "Opcode": "0x24",
+    "Funct": "NA",
+    "Format": ["rt", "i", "rs"]
+  },
+  "lhu": {
+    "Meaning": "Load Halfword Unsigned",
+    "Type": "I",
+    "Opcode": "0x25",
+    "Funct": "NA",
+    "Format": ["rt", "i", "rs"]
+  },
+  "lui": {
+    "Meaning": "Load Upper Immediate",
+    "Type": "I",
+    "Opcode": "0x0F",
+    "Funct": "NA",
+    "Format": ["rt", "i"]
+  },
+  "lw": {
+    "Meaning": "Load Word",
+    "Type": "I",
+    "Opcode": "0x23",
+    "Funct": "NA",
+    "Format": ["rt", "i", "rs"]
+  },
+  "mfhi": {
+    "Meaning": "Move from HI Register",
+    "Type": "R",
+    "Opcode": "0x00",
+    "Funct": "0x10",
+    "Format": ["rd"]
+  },
+  "mthi": {
+    "Meaning": "Move to HI Register",
+    "Type": "R",
+    "Opcode": "0x00",
+    "Funct": "0x11",
+    "Format": ["rs"]
+  },
+  "mflo": {
+    "Meaning": "Move from LO Register",
+    "Type": "R",
+    "Opcode": "0x00",
+    "Funct": "0x12",
+    "Format": ["rd"]
+  },
+  "mtlo": {
+    "Meaning": "Move to LO Register",
+    "Type": "R",
+    "Opcode": "0x00",
+    "Funct": "0x13",
+    "Format": ["rs"]
+  },
+  "mfc0": {
+    "Meaning": "Move from Coprocessor 0",
+    "Type": "R",
+    "Opcode": "0x10",
+    "Funct": "NA",
+    "Format": ["rt", "rd"]
+  },
+  "mult": {
+    "Meaning": "Multiply",
+    "Type": "R",
+    "Opcode": "0x00",
+    "Funct": "0x18",
+    "Format": ["rs", "rt"]
+  },
+  "multu": {
+    "Meaning": "Unsigned Multiply",
+    "Type": "R",
+    "Opcode": "0x00",
+    "Funct": "0x19",
+    "Format": ["rs", "rt"]
+  },
+  "nor": {
+    "Meaning": "Bitwise NOR (NOT-OR)",
+    "Type": "R",
+    "Opcode": "0x00",
+    "Funct": "0x27",
+    "Format": ["rd", "rs", "rt"]
+  },
+  "xor": {
+    "Meaning": "Bitwise XOR (Exclusive-OR)",
+    "Type": "R",
+    "Opcode": "0x00",
+    "Funct": "0x26",
+    "Format": ["rd", "rs", "rt"]
+  },
+  "or": {
+    "Meaning": "Bitwise OR",
+    "Type": "R",
+    "Opcode": "0x00",
+    "Funct": "0x25",
+    "Format": ["rd", "rs", "rt"]
+  },
+  "ori": {
+    "Meaning": "Bitwise OR Immediate",
+    "Type": "I",
+    "Opcode": "0x0D",
+    "Funct": "NA",
+    "Format": ["rt", "rs", "i"]
+  },
+  "sb": {
+    "Meaning": "Store Byte",
+    "Type": "I",
+    "Opcode": "0x28",
+    "Funct": "NA",
+    "Format": ["rt", "i", "rs"]
+  },
+  "sh": {
+    "Meaning": "Store Halfword",
+    "Type": "I",
+    "Opcode": "0x29",
+    "Funct": "NA",
+    "Format": ["rt", "i", "rs"]
+  },
+  "slt": {
+    "Meaning": "Set to 1 if Less Than",
+    "Type": "R",
+    "Opcode": "0x00",
+    "Funct": "0x2A",
+    "Format": ["rd", "rs", "rt"]
+  },
+  "slti": {
+    "Meaning": "Set to 1 if Less Than Immediate",
+    "Type": "I",
+    "Opcode": "0x0A",
+    "Funct": "NA",
+    "Format": ["rt", "rs", "i"]
+  },
+  "sltiu": {
+    "Meaning": "Set to 1 if Less Than Unsigned Immediate",
+    "Type": "I",
+    "Opcode": "0x0B",
+    "Funct": "NA",
+    "Format": ["rt", "rs", "i"]
+  },
+  "sltu": {
+    "Meaning": "Set to 1 if Less Than Unsigned",
+    "Type": "R",
+    "Opcode": "0x00",
+    "Funct": "0x2B",
+    "Format": ["rd", "rs", "rt"]
+  },
+  "sll": {
+    "Meaning": "Logical Shift Left",
+    "Type": "R",
+    "Opcode": "0x00",
+    "Funct": "0x00",
+    "Format": ["rd", "rt", "shamt"]
+  },
+  "srl": {
+    "Meaning": "Logical Shift Right (0-extended)",
+    "Type": "R",
+    "Opcode": "0x00",
+    "Funct": "0x02",
+    "Format": ["rd", "rt", "shamt"]
+  },
+  "sra": {
+    "Meaning": "Arithmetic Shift Right (sign-extended)",
+    "Type": "R",
+    "Opcode": "0x00",
+    "Funct": "0x03",
+    "Format": ["rd", "rt", "shamt"]
+  },
+  "sub": {
+    "Meaning": "Subtract",
+    "Type": "R",
+    "Opcode": "0x00",
+    "Funct": "0x22",
+    "Format": ["rd", "rs", "rt"]
+  },
+  "subu": {
+    "Meaning": "Unsigned Subtract",
+    "Type": "R",
+    "Opcode": "0x00",
+    "Funct": "0x23",
+    "Format": ["rd", "rs", "rt"]
+  },
+  "sw": {
+    "Meaning": "Store Word",
+    "Type": "I",
+    "Opcode": "0x2B",
+    "Funct": "NA",
+    "Format": ["rt", "i", "rs"]
+  },
+  "mul": {
+    "Meaning": "Multiply",
+    "Type": "R",
+    "Opcode": "0x2c",
+    "Funct":"0x2",
+    "Format": ["rd", "rs", "rt"]
+  }
+}

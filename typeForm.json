@@ -1,0 +1,14 @@
+{
+  "R": {
+    "order": ["op", "rs", "rt", "rd", "shamt", "funct"],
+    "size": {"op": 6, "rs": 5, "rt": 5, "rd": 5, "shamt": 5, "funct": 6}
+  },
+  "I": {
+    "order": ["op", "rs", "rt", "i"],
+    "size": {"op": 6, "rs": 5, "rt": 5, "i": 16}
+  },
+  "J": {
+    "order": ["op", "ad"],
+    "size": {"op": 6, "ad": 26}
+  }
+}
